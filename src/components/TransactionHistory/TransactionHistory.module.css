@@ -1,0 +1,20 @@
+.transactionTable {
+    text-align: center;
+    margin: 25px auto 0;
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 550px;
+}
+
+.transactionMainRow {
+    
+    background-color: rgb(49, 49, 49);
+}
+
+.transactionTableTitle {
+    padding: 6px 0;
+    color: white;
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-weight: 500;
+}

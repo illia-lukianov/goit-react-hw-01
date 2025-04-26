@@ -1,10 +1,11 @@
-import './FriendList.css'
+import FriendListItem from '../FriendListItem/FriendsListItem'
+import styles from './FriendList.module.css'
 
-export default function FriendList({friendsInfo: {avatar, name, isOnline, id}}) {
-    return (<div>
-  <img src={avatar} alt="Avatar" width="48" />
-        <p>{name}</p>
-        <p>{ isOnline}</p>
-    </div>
-    )
+export default function FriendList({ friendsInfo }) {    
+    return (
+        <div className={styles.friendsContainer}>
+            {friendsInfo.map((friendInfo) =>
+            <FriendListItem key={friendInfo.id} info={friendInfo} />)}
+        </div>
+        )
 }
